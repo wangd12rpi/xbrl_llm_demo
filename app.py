@@ -18,7 +18,7 @@ models = {"Llama 3.1 8B (Finetuned for tagging)": "accounts/d0nnw0n9-c1910b/mode
 def inference(inputs: str, model, max_new_token=15, delimiter="\n", if_print_out=False):
     config = os.getenv('FIREWORKS_KEY')
 
-    client = Fireworks(api_key=config["FIREWORKS_KEY"])
+    client = Fireworks(api_key=config)
     response = client.chat.completions.create(
         model=model,
         max_tokens=max_new_token,
