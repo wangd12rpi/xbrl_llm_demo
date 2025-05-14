@@ -6,7 +6,7 @@ import gradio as gr
 import dotenv
 from fireworks.client import Fireworks
 
-models = {"Llama 3.1 8B (Finetuned for tagging)": "accounts/d0nnw0n9-c1910b/models/finer",
+models = {"Llama 3.1 8B (Finetuned for tagging)": "accounts/d0nnw0n9-c1910b/deployedModels/finer-eq9n7vco",
           "Llama 3.1 8B (Finetuned for extraction)": "accounts/d0nnw0n9-c1910b/models/extraction",
           "Llama 3.1 8B (Base)": "accounts/fireworks/models/llama-v3p1-8b-instruct"}
 
