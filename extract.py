@@ -61,6 +61,55 @@ def inference(inputs: str, model, max_new_token=35, delimiter="\n", if_print_out
     return answer
 
 
+def get_generic_ui(task_info):
+    with gr.Blocks() as ui:
+        gr.Markdown(
+            f"""
+{task_info['description']}
+### Usage
+* **Input:** {task_info['input']}.
+* **Output:** {task_info['output']}. 
+
+            """
+        )
+        gr.Interface(
+            fn=process_generic,
+            cache_examples=False,
+            inputs=[
+                gr.Textbox(label="Question"), gr.Textbox(label="GT Answer"), task_info['model']
+            ],
+            outputs=[
+                gr.HTML(label="Llama 3.1 8b (Base) output"),
+                gr.HTML(label="Llama 3.1 8b (fine-tuned) output"),
+                gr.HTML(label="Ground truth answer")
+            ],
+            examples=task_info['examples'],
+            examples_per_page=20,
+            flagging_mode="never"
+
+        )
+    return ui
+
+
+def process_generic(question, gt_answer, ft_model):
+    global extraction_data
+    result = [[], []]
+    context = question
+
+    for i, model in enumerate(
+            ["accounts/fireworks/models/llama-v3p1-8b-instruct", ft_model]):
+        output = inference(context, model)
+        result[i] = output.split("<|end_of_text|>")[0]
+
+    all_results = [result[0], result[1], gt_answer]
+    model_names = ["Llama 3.1 8b (Base) output", "Llama 3.1 8b (fine-tuned for XBRL extraction) output",
+                   "Ground truth answer"]
+    for i, x in enumerate(all_results):
+        all_results[i] = process_html(x, file, model_names[i])
+
+    return tuple(all_results)
+
+
 def process_extract(question, file):
     global extraction_data
     if file not in extraction_data:
@@ -80,7 +129,8 @@ def process_extract(question, file):
         result[i] = output.split("<|end_of_text|>")[0]
 
     all_results = [result[0], result[1], gt_answer]
-    model_names = ["Llama 3.1 8b (Base) output", "Llama 3.1 8b (fine-tuned for XBRL extraction) output", "Ground truth answer"]
+    model_names = ["Llama 3.1 8b (Base) output", "Llama 3.1 8b (fine-tuned for XBRL extraction) output",
+                   "Ground truth answer"]
     for i, x in enumerate(all_results):
         all_results[i] = process_html(x, file, model_names[i])
 
@@ -129,3 +179,42 @@ def process_html(formula_str, report_url, model_name):
     </div></label> 
     </div>'''
     return html_output
+
+
+def process_tagging(sentence):
+    numbers = re.findall(r'\b\d+\.?\d*\b', sentence)
+    months = ["January", "February", "March", "April", "May", "June",
+              "July", "August", "September", "October", "November", "December"]
+
+    extracted_numbers = []
+    for num_str in numbers:
+        if num_str in [str(x) for x in list(range(2000, 2025, 1))]:
+            continue
+
+        # Exclude 1 or 2 digit numbers followed by a comma and then a 4 digit number (likely day and year)
+        match = re.search(rf"{re.escape(num_str)}\s*,\s*\d{{4}}", sentence)
+        if match:
+            continue
+
+        # Exclude numbers followed by a month
+        match = re.search(rf"{re.escape(num_str)}\s+({'|'.join(months)})", sentence, re.IGNORECASE)
+        if match:
+            continue
+
+        extracted_numbers.append(num_str)
+    print(extracted_numbers)
+
+    result = [[], []]
+
+    for i, model in enumerate(
+            ["accounts/fireworks/models/llama-v3p1-8b-instruct", "accounts/d0nnw0n9-c1910b/models/finer"]):
+        for x in extracted_numbers:
+            prompt = f'''What is the appropriate XBRL US GAAP tag for "{x}" in the given sentence? Output the US GAAP tag only and nothing else. \n "{sentence}"\n'''
+            output = inference(prompt, model)
+            output = output.split("<|end_of_text|>")[0]
+            result[i].append([x, output])
+
+    gt = None
+    if sentence in tagging_example:
+        gt = tagging_example[sentence]
+    return result[0], result[1], gt
