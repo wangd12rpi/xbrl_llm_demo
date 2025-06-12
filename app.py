@@ -77,21 +77,24 @@ Analyze an existing XBRL report with ease using our fine-tuned model as a chatbo
         )
 
     with gr.Blocks(
-            theme=gr.themes.Base(
-                font=["system-ui"])) as demo:
+            theme=gr.themes.Base()) as demo:
         gr.Markdown("# FinLoRA Demo\n\n### Benchmarking LoRA Methods for Fine-Tuning LLMs on Financial Datasets"
                     )
         gr.HTML("""<div>
   <a class="linkto" href="https://huggingface.co/collections/wangd12/finlora-adaptors-8bit-quantization-rank-8-684a45430e4d4a8d7ba205a4"><img src="https://raw.githubusercontent.com/wangd12rpi/FinLoRA/main/static/models_btn.svg"></a>
-  <a  class="linkto" href="https://finlora-docs.readthedocs.io/en/latest/"><img src="https://raw.githubusercontent.com/wangd12rpi/FinLoRA/main/static/doc_btn.svg"></a></div>
+  <a  class="linkto" href="https://finlora-docs.readthedocs.io/en/latest/"><img src="https://raw.githubusercontent.com/wangd12rpi/FinLoRA/main/static/doc_btn.svg"></a>
   <a  class="linkto" href="https://arxiv.org/abs/2505.19819"><img src="https://raw.githubusercontent.com/wangd12rpi/FinLoRA/main/static/paper_btn.svg"></a></div>
 
          <style>
         .linkto {
             display: inline-block;
+            margin-right: 6px;
         }
         .html-container {
-        padding: 0 !important;
+            padding: 0 !important;
+        }
+        body {
+            font-family: system-ui, sans-serif !important;
         }
         </style>
         
