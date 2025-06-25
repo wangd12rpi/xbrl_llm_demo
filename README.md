@@ -1,6 +1,6 @@
 ---
-title: Xbrl Llm Demo
-emoji: 🦀
+title: FinLoRA Demo
+emoji: 📄
 colorFrom: blue
 colorTo: yellow
 sdk: gradio
