@@ -33,6 +33,8 @@ filename_to_url_map = {
     "ba-20211231/ba-20211231_htm.xml_context_i6d361a861ed840de8f571199b7bf9359_D20210101-20211231": "https://www.sec.gov/Archives/edgar/data/12927/000001292722000010/ba-20211231.htm"
 }
 
+with open('finer_example.json') as f:
+    tagging_example = json.load(f)
 
 def inference(inputs: str, model, max_new_token=35, delimiter="\n", if_print_out=False):
     config = 0
@@ -91,21 +93,21 @@ def get_generic_ui(task_info):
     return ui
 
 
-def process_generic(question, gt_answer, ft_model):
+def process_generic(question, gt, ft_model):
     global extraction_data
     result = [[], []]
     context = question
 
+    print(ft_model)
     for i, model in enumerate(
             ["accounts/fireworks/models/llama-v3p1-8b-instruct", ft_model]):
         output = inference(context, model)
         result[i] = output.split("<|end_of_text|>")[0]
 
-    all_results = [result[0], result[1], gt_answer]
-    model_names = ["Llama 3.1 8b (Base) output", "Llama 3.1 8b (fine-tuned for XBRL extraction) output",
+
+    all_results = [result[0], result[1], gt]
+    model_names = ["Llama 3.1 8b (Base) output", "Llama 3.1 8b (fine-tuned) output",
                    "Ground truth answer"]
-    for i, x in enumerate(all_results):
-        all_results[i] = process_html(x, file, model_names[i])
 
     return tuple(all_results)
 
