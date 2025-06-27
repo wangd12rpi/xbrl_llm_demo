@@ -1,50 +1,50 @@
-{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: Trading partners unlikely to take India's gold import curbs lightly\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: Trading partners unlikely to take India's gold import curbs lightly\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: Trading partners unlikely to take India's gold import curbs lightly\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going down? Please choose an answer from {Yes/No}.\nInput: Trading partners unlikely to take India's gold import curbs lightly\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price in the past? Please choose an answer from {Yes/No}.\nInput: Trading partners unlikely to take India's gold import curbs lightly\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price in the future? Please choose an answer from {Yes/No}.\nInput: Trading partners unlikely to take India's gold import curbs lightly\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: Trading partners unlikely to take India's gold import curbs lightly\nAnswer: ": "Yes"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: Trading partners unlikely to take India's gold import curbs lightly\nAnswer: ": "No"}
-{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: Trading partners unlikely to take India's gold import curbs lightly\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: gold jumps more than $10 as draghi boosts euro\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: gold jumps more than $10 as draghi boosts euro\nAnswer: ": "Yes"}
-{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: gold jumps more than $10 as draghi boosts euro\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going down? Please choose an answer from {Yes/No}.\nInput: gold jumps more than $10 as draghi boosts euro\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price in the past? Please choose an answer from {Yes/No}.\nInput: gold jumps more than $10 as draghi boosts euro\nAnswer: ": "Yes"}
-{"Instruction: Does the news headline talk about price in the future? Please choose an answer from {Yes/No}.\nInput: gold jumps more than $10 as draghi boosts euro\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: gold jumps more than $10 as draghi boosts euro\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: gold jumps more than $10 as draghi boosts euro\nAnswer: ": "No"}
-{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: gold jumps more than $10 as draghi boosts euro\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: Dec. gold drops $10.70, or 0.8%, to settle at $1,279.70/oz\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: Dec. gold drops $10.70, or 0.8%, to settle at $1,279.70/oz\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: Dec. gold drops $10.70, or 0.8%, to settle at $1,279.70/oz\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going down? Please choose an answer from {Yes/No}.\nInput: Dec. gold drops $10.70, or 0.8%, to settle at $1,279.70/oz\nAnswer: ": "Yes"}
-{"Instruction: Does the news headline talk about price in the past? Please choose an answer from {Yes/No}.\nInput: Dec. gold drops $10.70, or 0.8%, to settle at $1,279.70/oz\nAnswer: ": "Yes"}
-{"Instruction: Does the news headline talk about price in the future? Please choose an answer from {Yes/No}.\nInput: Dec. gold drops $10.70, or 0.8%, to settle at $1,279.70/oz\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: Dec. gold drops $10.70, or 0.8%, to settle at $1,279.70/oz\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: Dec. gold drops $10.70, or 0.8%, to settle at $1,279.70/oz\nAnswer: ": "No"}
-{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: Dec. gold drops $10.70, or 0.8%, to settle at $1,279.70/oz\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: april gold futures close at highest level since feb. 9\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: april gold futures close at highest level since feb. 9\nAnswer: ": "Yes"}
-{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: april gold futures close at highest level since feb. 9\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going down? Please choose an answer from {Yes/No}.\nInput: april gold futures close at highest level since feb. 9\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price in the past? Please choose an answer from {Yes/No}.\nInput: april gold futures close at highest level since feb. 9\nAnswer: ": "Yes"}
-{"Instruction: Does the news headline talk about price in the future? Please choose an answer from {Yes/No}.\nInput: april gold futures close at highest level since feb. 9\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: april gold futures close at highest level since feb. 9\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: april gold futures close at highest level since feb. 9\nAnswer: ": "No"}
-{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: april gold futures close at highest level since feb. 9\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: gold rate per gram: check out current gold price per gram\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: gold rate per gram: check out current gold price per gram\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: gold rate per gram: check out current gold price per gram\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going down? Please choose an answer from {Yes/No}.\nInput: gold rate per gram: check out current gold price per gram\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price in the past? Please choose an answer from {Yes/No}.\nInput: gold rate per gram: check out current gold price per gram\nAnswer: ": "Yes"}
-{"Instruction: Does the news headline talk about price in the future? Please choose an answer from {Yes/No}.\nInput: gold rate per gram: check out current gold price per gram\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: gold rate per gram: check out current gold price per gram\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: gold rate per gram: check out current gold price per gram\nAnswer: ": "No"}
-{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: gold rate per gram: check out current gold price per gram\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: Gold gains as dollar weakens ahead of Fed policy meeting minutes\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: Gold gains as dollar weakens ahead of Fed policy meeting minutes\nAnswer: ": "Yes"}
-{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: Gold gains as dollar weakens ahead of Fed policy meeting minutes\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price going down? Please choose an answer from {Yes/No}.\nInput: Gold gains as dollar weakens ahead of Fed policy meeting minutes\nAnswer: ": "No"}
-{"Instruction: Does the news headline talk about price in the past? Please choose an answer from {Yes/No}.\nInput: Gold gains as dollar weakens ahead of Fed policy meeting minutes\nAnswer: ": "Yes"}
+{"Instruction: Does the news headline talk about price in the future? Please choose an answer from {Yes/No}.\nInput: Gold strengthens to Rs 28,200 on global cues, spot demand\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: Expect Gold to trade negative: Sushil Finance\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: gold selloff risks halting investors' buying spree\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: no gold dhamaka in diwali run-up as gold prices are expected to trade in the rs 26,000-28,500 range\nAnswer: ": "No"}
+{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: Gold futures rise to Rs 30,866 per 10 gm\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: dec. gold up 40 cents at $1,778.80/oz\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: dec gold up $6 at $475 an ounce\nAnswer: ": "No"}
+{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: gold dawdles to end record-breaking year with modest gains\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: amex gold bugs index up 0.1% at 203.14\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: gold ends higher after six session drop\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: Gold edges lower with Gaza, Ukraine worries in focus\nAnswer: ": "No"}
+{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: Gold falls to 7-week low as rate hike expectations rise\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price in the future? Please choose an answer from {Yes/No}.\nInput: dec. gold settles at $1,301.70/oz on comex, down $9.80, or 0.8%\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price going down? Please choose an answer from {Yes/No}.\nInput: gold outpaced in metals rally\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: gold declines by rs 25, silver by rs 600 on global cues\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: Gold Prices Drop on Stronger U.S. Dollar\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: gold remains lower after u.s. consumer spending, jobless claims data\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price going down? Please choose an answer from {Yes/No}.\nInput: crude oil up, gold down after spending data\nAnswer: ": "Yes"}
+{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: gold settles at its lowest in over 9 months\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: gold prices close more than $5 lower\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: government fixes sovereign gold bond rate at rs 2,866/gram\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price going down? Please choose an answer from {Yes/No}.\nInput: Gold falls as market preps for eventual rate hikes\nAnswer: ": "Yes"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: Gold edges up, but safe-haven demand begins to fade\nAnswer: ": "No"}
+{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: gold to trade in 30813-31473 range: achiievers equities\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: Gold edges down as dollar firms up on upbeat US data, Fed comments\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: Gold may rebound in the medium term\nAnswer: ": "Yes"}
+{"Instruction: Does the news headline talk about price in the past? Please choose an answer from {Yes/No}.\nInput: gold to rebound from biggest monthly fall since '08 ahead of europe fears\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: gold futures top $1,700 ahead of comex settlement\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: June gold settles at $1,294.10/oz, up $2.20, or 0.2%\nAnswer: ": "No"}
+{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: feb gold last at $557.70/oz, up $13.20, or 2.4%\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: a crypto tycoon, banking heir and the mysterious fight for gold\nAnswer: ": "No"}
+{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: cboe gold index closes at 82.8, down 1.3%\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price in the past? Please choose an answer from {Yes/No}.\nInput: google : 'buy bitcoin' is lighting up google as cryptocurrency outshines gold\nAnswer: ": "Yes"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: gold bulls await brexit turmoil to start rally\nAnswer: ": "Yes"}
+{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: Gold dips in Asia after Fed hike, but steady dollar offers support\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: Gold turns higher ahead of closing bell to notch a modest gain\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price staying constant? Please choose an answer from {Yes/No}.\nInput: don't give up on gold just yet\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: oil and gold looking a little bit more 'normal' as 2017 draws to a close\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price in the past? Please choose an answer from {Yes/No}.\nInput: gold, silver to trade sideways on friday; here's why\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price going up? Please choose an answer from {Yes/No}.\nInput: april gold ends up $4.50 at $980.50 an ounce on nymex\nAnswer: ": "Yes"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: Gold prices to trade positive: Angel Commodities\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: gold slides lower with u.s. nonfarm payrolls on tap\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: mcx goldm april contract up 1%\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price? Please choose an answer from {Yes/No}.\nInput: gold falls 1% as dollar continues to strengthen\nAnswer: ": "No"}
+{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: gold jumps to 3 week high\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the future? Please choose an answer from {Yes/No}.\nInput: metals indexes close higher, mirror gold's gains\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: february gold up 0.4% at $1,345.70/oz.\nAnswer: ": "No"}
+{"Instruction: Does the news headline compare gold with any other asset? Please choose an answer from {Yes/No}.\nInput: Gold steady amid Fed rate hike expectations\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about price in the future? Please choose an answer from {Yes/No}.\nInput: gold rallies on heavy demand, silver recovers\nAnswer: ": "No"}
+{"Instruction: Does the news headline talk about a general event (apart from prices) in the past? Please choose an answer from {Yes/No}.\nInput: feb gold ends the year $65.80, or 14.5%, higher\nAnswer: ": "No"}

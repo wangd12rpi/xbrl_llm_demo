@@ -1,6 +1,10 @@
 import json
 import glob
 import os
+import random
+
+from dask.dataframe.shuffle import shuffle
+
 
 def process_jsonl_files():
     """
@@ -35,7 +39,8 @@ def process_jsonl_files():
                     except json.JSONDecodeError as e:
                         print(f"Error parsing line in {jsonl_file}: {e}")
                         continue
-            
+
+            random.shuffle(data)
             if jsonl_file in sentiment_files:
                 # Take top 50 from this sentiment file and add to sentiment collection
                 top_50_sentiment = data[:50]

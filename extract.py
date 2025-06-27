@@ -97,7 +97,7 @@ def process_generic(question, gt, ft_model):
     global extraction_data
     result = [[], []]
     context = question
-
+    ft_model = "accounts/d0nnw0n9-c1910b/models/" + ft_model
     print(ft_model)
     for i, model in enumerate(
             ["accounts/fireworks/models/llama-v3p1-8b-instruct", ft_model]):
