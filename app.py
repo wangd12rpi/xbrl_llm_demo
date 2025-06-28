@@ -59,14 +59,18 @@ XBRL tagging is a key step in creating XBRL reports. Numerical entities in texts
             flagging_mode="never"
         )
 
-    generic_blocks = []
+    generic_blocks = {}
     for x in generic_data:
+        name = x[0].replace("_", "").replace("example.jsonl",
+                                                     "").replace(
+            "exampledata/", "")
         with gr.Blocks() as blk:
             gr.Interface(
                 fn=process_generic,
                 cache_examples=False,
                 inputs=[
-                    gr.Textbox(label="Question"), gr.Textbox(visible=False, label="Ground Truth"), gr.Textbox(label="Model", visible=False)
+                    gr.Textbox(label="Question"), gr.Textbox(visible=False, label="Ground Truth"),
+                    gr.Textbox(label="Model", visible=False)
                 ],
                 outputs=[
                     gr.Text(label="Llama 3.1 8b (Base) output"),
@@ -74,14 +78,12 @@ XBRL tagging is a key step in creating XBRL reports. Numerical entities in texts
                     gr.Text(label="Ground truth answer")
                 ],
                 examples=[[list(xi.keys())[0], [list(xi.values())][0][0],
-                         x[0].replace("_", "").replace("example.jsonl",
-                                                                                              "").replace(
-                               "exampledata/", "")] for xi in x[1]],
+                           name] for xi in x[1]],
                 examples_per_page=20,
                 flagging_mode="never"
 
             )
-        generic_blocks.append(blk)
+        generic_blocks[name] = (blk)
 
     with gr.Blocks() as extraction:
         gr.Markdown(
@@ -137,8 +139,8 @@ Analyze an existing XBRL report with ease using our fine-tuned model as a chatbo
         
 """)
 
-        gr.TabbedInterface([tagging, extraction] + generic_blocks,
-                           ["XBRL Tagging", "XBRL Analysis", "Buffett", "Headline", "NER", "Sentiment",
+        gr.TabbedInterface([tagging, extraction] + [generic_blocks['buffett'], generic_blocks['ner'], generic_blocks['xbrlterm']],
+                           ["XBRL Tagging", "XBRL Analysis", "Buffett Agent", "NER",
                             "XBRL Term"])
 
     demo.launch(share=True)

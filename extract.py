@@ -36,7 +36,8 @@ filename_to_url_map = {
 with open('finer_example.json') as f:
     tagging_example = json.load(f)
 
-def inference(inputs: str, model, max_new_token=35, delimiter="\n", if_print_out=False):
+
+def inference(inputs: str, model, max_new_token=75, delimiter="\n", if_print_out=False):
     config = 0
     try:
         config = dotenv.dotenv_values(".env")['FIREWORKS_KEY']
@@ -56,6 +57,7 @@ def inference(inputs: str, model, max_new_token=35, delimiter="\n", if_print_out
                 "content": inputs
             }
         ],
+        temperature=0.0,
         stream=False
     )
     answer = (response.choices[0].message.content)
@@ -103,7 +105,6 @@ def process_generic(question, gt, ft_model):
             ["accounts/fireworks/models/llama-v3p1-8b-instruct", ft_model]):
         output = inference(context, model)
         result[i] = output.split("<|end_of_text|>")[0]
-
 
     all_results = [result[0], result[1], gt]
     model_names = ["Llama 3.1 8b (Base) output", "Llama 3.1 8b (fine-tuned) output",
